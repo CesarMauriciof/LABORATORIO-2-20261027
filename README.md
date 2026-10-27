@@ -118,10 +118,6 @@ búsqueda de hiperparámetros. No sobrescribe el modelo de la app; para eso usa
 
 ## Despliegue en Streamlit Community Cloud (endpoint público)
 
-```
-https://TU-USUARIO-TU-APP.streamlit.app
-```
-
 **Endpoint:** https://predicci.streamlit.app/
 
 ## Uso de la aplicación
