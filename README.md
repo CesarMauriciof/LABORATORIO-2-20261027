@@ -5,6 +5,8 @@ calificaciones, asistencia y hábitos. El modelo es un **perceptrón multicapa (
 entrenado con `scikit-learn` sobre el dataset `dataset_estudiantes_balanceado.csv`
 (600 registros, 300 aprobados y 300 reprobados).
 
+<img width="1361" height="653" alt="{275D7CEE-6A61-42D7-B86A-9A7EF296439F}" src="https://github.com/user-attachments/assets/d85c6619-c847-4f5b-a7a3-1aa243998fd0" />
+
 ## Resultados del modelo
 
 | Métrica | Valor |
@@ -119,44 +121,15 @@ búsqueda de hiperparámetros. No sobrescribe el modelo de la app; para eso usa
 El repositorio ya está listo para subirse: incluye `requirements.txt`, el modelo entrenado
 y los reportes. No se necesitan secretos ni variables de entorno.
 
-### 1. Subir el proyecto a GitHub
 
-Crea un repositorio vacío en GitHub (por ejemplo `mlp-aprobacion-estudiantes`) y ejecuta
-en esta carpeta:
-
-```bash
-git init
-git add .
-git commit -m "Laboratorio 2: MLP para predicción de aprobación"
-git branch -M main
 git remote add origin https://github.com/TU-USUARIO/TU-REPOSITORIO.git
 git push -u origin main
-```
-
-### 2. Crear la app en Streamlit Cloud
-
-1. Entra a <https://share.streamlit.io> e inicia sesión con GitHub.
-2. Selecciona **Create app** (o **New app**).
-3. Elige el repositorio, la rama `main` y el archivo principal `app.py`.
-4. En **Advanced settings**, selecciona **Python 3.13** (o la versión más reciente
-   disponible, siempre que sea 3.12 o superior).
-5. Presiona **Deploy** y espera a que termine la instalación.
-
-### 3. Registrar el endpoint
-
-Cuando la app esté publicada, Streamlit te dará una URL con esta forma:
 
 ```
 https://TU-USUARIO-TU-APP.streamlit.app
 ```
 
-Pega aquí tu enlace final:
-
-**Endpoint:** _pendiente de publicar_
-
-> Streamlit publica una aplicación web interactiva. Esa URL es el endpoint del servicio
-> (formulario + predicción en pantalla). No expone una API REST con JSON; para eso haría
-> falta desplegar un servicio aparte (por ejemplo FastAPI en Render o Railway).
+**Endpoint:** https://predicci.streamlit.app/
 
 ## Uso de la aplicación
 
