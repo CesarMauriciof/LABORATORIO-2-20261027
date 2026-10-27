@@ -27,6 +27,7 @@ El análisis exploratorio está en [`reports/eda_resumen.md`](reports/eda_resume
 
 ```
 ├── app.py                            # Aplicación Streamlit (entrypoint)
+├── MLP_estudiantes.ipynb             # Notebook con el análisis y el entrenamiento paso a paso
 ├── dataset_estudiantes_balanceado.csv
 ├── models/
 │   └── mlp_estudiantes.joblib        # Pipeline entrenado (imputador + escalador + MLP)
@@ -95,6 +96,23 @@ usar `streamlit run app.py`.
 
 La pestaña **Modelo y métricas** incluye un botón para reentrenar desde la propia app;
 tarda alrededor de 30 segundos y actualiza el modelo y los reportes.
+
+## Notebook de Jupyter
+
+`MLP_estudiantes.ipynb` contiene el mismo flujo explicado paso a paso: carga y calidad de
+los datos, EDA, imputación por medianas, estandarización, búsqueda de arquitectura,
+evaluación con matriz de confusión, importancia de variables y conclusiones. Ya está
+ejecutado, así que puedes ver los resultados sin correrlo; para abrirlo:
+
+```bash
+pip install jupyterlab
+jupyter lab MLP_estudiantes.ipynb
+```
+
+El notebook tarda alrededor de 90 segundos en ejecutarse completo porque repite la
+búsqueda de hiperparámetros. No sobrescribe el modelo de la app; para eso usa
+`python scripts/entrenar_modelo.py`.
+
 
 ## Despliegue en Streamlit Community Cloud (endpoint público)
 
