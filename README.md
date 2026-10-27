@@ -118,13 +118,6 @@ búsqueda de hiperparámetros. No sobrescribe el modelo de la app; para eso usa
 
 ## Despliegue en Streamlit Community Cloud (endpoint público)
 
-El repositorio ya está listo para subirse: incluye `requirements.txt`, el modelo entrenado
-y los reportes. No se necesitan secretos ni variables de entorno.
-
-
-git remote add origin https://github.com/TU-USUARIO/TU-REPOSITORIO.git
-git push -u origin main
-
 ```
 https://TU-USUARIO-TU-APP.streamlit.app
 ```
